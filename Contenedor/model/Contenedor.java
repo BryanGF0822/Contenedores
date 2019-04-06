@@ -2,7 +2,7 @@ package model;
 
 public class Contenedor{
 
-	private double weight;
+	private double widht;
 
 	private double height;
 
@@ -10,49 +10,52 @@ public class Contenedor{
 
 
 
-	public Contenedor(double weight, double height, double largo){
+	public Contenedor(double widht, double height, double largo){
 
-		this.weight = weight;
+		this.widht = widht;
 
 		this.height = height;
 
 		this.largo = largo;
 	}
 
-	public getVolumenc1(){
+	public double getWidth(){
 
-		double volumenc1 = weight * height * largo;
-
-		return volumenc1;
+		return widht;
 	}
 
-	public getVolumenc2(){
+	public void setWidth(double widht){
 
-		double volumenc2 = weight * height * largo;
-
-		return volumenc2
+		this.widht = widht;
 	}
 
-	public getVolumenc3(){
+	public double getHeight(){
 
-		double volumenc3 = weight * height * largo;
+		return height;
+	}
 
-		return volumenc3;
+	public void setHeight(double height){
+
+		this.height = height;
+	}
+
+	public double getLargo(){
+
+		return largo;
+	}
+
+	public void setLargo(double largo){
+
+		this.largo = largo;
 	}
 
 
 
-	public getVolumenTotalDeLaMercancia(){
+	public double getVolumen(){
 
-		double volumenTotal = volumenc1 * volumenc2 * volumenc3;
+		double volumen = widht * height * largo;
 
-		return volumenTotal;
+		return volumen;
 	}
 
-	public getVolumenPromedioDeLosContenedores(){
-
-		double volumenPromedio = (volumenc1 * volumenc2 * volumenc3) / 3;
-
-		return volumenPromedio;
-	}
 }
